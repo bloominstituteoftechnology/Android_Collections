@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Thesaurus</string>
+    <string name="search_hint">Enter Search Word</string>
+    <string name="search_button">Search</string>
+    <string name="no_synonyms">No Synonyms Found</string>
+</resources>
