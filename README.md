@@ -4,6 +4,9 @@ This project will help you practice the skills and concepts you learned related 
 
 > A synonym is a word with the same meaning as another word. For example, `difficult` and `hard` are synonyms.
 
+### Survey
+After completing this project, please fill out the survey found [here](https://goo.gl/forms/n54zM4UV6qwWXlRG2).  
+
 ### Create an Android Studio Project
 
 1. Create a new Android project
