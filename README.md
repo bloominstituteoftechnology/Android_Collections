@@ -8,7 +8,7 @@ This project will help you practice the skills and concepts you learned related 
 
 1. Create a new Android project
 2. Name the project "Thesaurus"
-3. Make sure you select Java as the development language
+3. Make sure you select Kotlin as the development language
 
 ### Add UI Elements to activity_main.xml
 
@@ -21,19 +21,20 @@ This project will help you practice the skills and concepts you learned related 
 
 ### Create Listeners
 
-1. Create an onClickListener for the button in the MainActivity.java file.
+1. Create an onClickListener for the button in the MainActivity.kt file.
 
 ### Write A Thesaurus Lookup Function
 
-1. In MainActivity.java, create a variable that is a 2 dimensional String array where each element is an array of strings that are synonyms of the key word.
-2. If you need help getting started, you can copy and paste the list found [here](https://github.com/LambdaSchool/Android_Collections/blob/master/Synonyms.java). Feel free to add any additional words that you'd like.
-3. In this file, create a function called `synonyms()`. It should take a single string as an argument, and return a array of `String`s.
-4. Write the `synonyms()` function. It should return an array of strings that are synonyms for the passed in string, or null if there are no synonyms.
+1. In MainActivity.kt, create a variable that is a 2 dimensional String array where each element is an array of strings that are synonyms of the key word.
+2. If you need help getting started, you can copy and paste the list found [here](https://github.com/LambdaSchool/Android_Collections/blob/master/Synonyms.kt). Feel free to add any additional words that you'd like.
+3. In this file, create a function called `synonyms`. It should take a single string as an argument, and return a array of `String` objects.
+> The return type should be `Array<String>?` so you can return a null array if there isn't a list of synonyms  
+4. Write the `synonyms` function. It should return an array of strings that are synonyms for the passed in string, or null if there are no synonyms.
 5. Use a for loop to step through the top level array and look for the string in the first element of each element array.
 
 ### Implement The User Interface
 
-1. In the listener for the "Show Synonyms" button, get the string entered in the text field, look up synonyms for it using your `synonyms()` function, and if any synonyms are found, display them in the text view.
+1. In the listener for the "Show Synonyms" button, get the string entered in the text field, look up synonyms for it using your `synonyms` function, and if any synonyms are found, display them in the text view.
 2. Be sure to combine the strings in the array into a single string to be displayed in the text view.
 
 ### Build, Run, and Test Your App
@@ -48,7 +49,7 @@ If you finish and want another challenge try making it so that if a any word in 
 For example, if your synonyms array were:
 
 ```
-String[][] synonyms = {{"learn", "determine", "master", "study", "get", "grasp"}};
+val synonyms = arrayOf(arrayOf("learn", "determine", "master", "study", "get", "grasp")))
 ```
 
 and the user entered `"study"`, the app should output "determine", "master", "get", "grasp", **and** "learn".
